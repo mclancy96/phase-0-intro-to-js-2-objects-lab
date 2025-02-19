@@ -8,7 +8,8 @@ const updateEmployeeWithKeyAndValue = (employee, key, value) => {
 }
 
 const destructivelyUpdateEmployeeWithKeyAndValue = (employee, key, value) => {
-
+    employee[key] = value;
+    return employee;
 }
 
 const deleteFromEmployeeByKey = (employee, key) => {
